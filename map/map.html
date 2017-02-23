@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+
+function jinalshah(var x,var y)
+{
+  var mapProp = {
+  
+    center:new google.maps.LatLng(23.0412005,72.5483874),
+    zoom:5,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("jinal"), mapProp);
+
+}
+function initialize() {
+  var mapProp = {
+  
+    center:new google.maps.LatLng(23.0412005,72.5483874),
+    zoom:18,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<div id="googleMap" style="width:500px;height:380px;"></div>
+<div id="jinal" style="width:500px;height:380px;" ></div>
+<button onclick="jinalshah()">Click ME</button>
+</body>
+</html>

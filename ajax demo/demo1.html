@@ -1,0 +1,26 @@
+<div>
+<head>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+<script>
+$(document).ready(function(){
+alert("hello");
+
+$("#txt1").keypress(function() {
+
+var x=document.getElementById("txt1");
+	$("#op").html(x.value);
+  
+});
+
+});
+
+</script>
+</head>
+<body>
+<input type="text" id="txt1" />
+<div id="op"></div>
+</body>
+</div>
